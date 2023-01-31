@@ -1,0 +1,24 @@
+{
+  "name": "pureweb-test",
+  "version": "1.0.0",
+  "description": "Test task for Pureweb",
+  "main": "index.js",
+  "scripts": {
+    "dev": "sass --watch src/scss --parallel live-server ",
+    "build": "sass --no-source-map src/scss:dist/css && copyfiles -u 1 src/**/*.* dist -e src/scss/** -e src/css/**",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Igor Asessorov",
+  "license": "ISC",
+  "devDependencies": {
+    "copyfiles": "^2.4.1",
+    "live-server": "^1.2.2",
+    "sass": "^1.57.1",
+    "stylelint": "^14.16.1",
+    "stylelint-config-prettier-scss": "^0.0.1",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard-scss": "^6.1.0",
+    "stylelint-order": "^6.0.1",
+    "stylelint-scss": "^4.3.0"
+  }
+}
